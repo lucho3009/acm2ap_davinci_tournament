@@ -21,7 +21,9 @@ public class Main {
         profesoresPOO.setPosition(1);
         estudiantesFC.setPosition(0);
 
-        Player alumnoLuis = new Player("Luis Diaz");
+        Player alumnoLuis = new Player("Luis Diaz",1,"Goalkeeper");
+        Player profeSergio = new Player("Sergio Medina",2,"Defender");
+        Player profeSuplemente = new Player("Juan manuel",3,"forwer");
 
         primerParcial.setLocalTeam(profesoresPOO);
         primerParcial.setVisitantTeam(estudiantesFC);

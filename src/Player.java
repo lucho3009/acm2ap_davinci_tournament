@@ -10,7 +10,7 @@ public class Player {
         this.setMatchCounter(0);
         this.setGoalCounter(0);
     }
-    
+
     Player(String name, int number, String position) {
         this.setMatchCounter(0);
         this.setGoalCounter(0);
