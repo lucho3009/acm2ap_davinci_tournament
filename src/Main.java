@@ -20,7 +20,8 @@ public class Main {
         TeamSeason recursantesFC = new TeamSeason("Recursantes FC");
         profesoresPOO.setPosition(1);
         estudiantesFC.setPosition(0);
-        
+
+        Player alumnoLuis = new Player("Luis Diaz");
 
         primerParcial.setLocalTeam(profesoresPOO);
         primerParcial.setVisitantTeam(estudiantesFC);

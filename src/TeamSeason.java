@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class TeamSeason extends Team {
     private int position;
+    private String name;
     private ArrayList<Player> players;
 
     TeamSeason(){
@@ -29,4 +30,12 @@ public class TeamSeason extends Team {
         return;
     }
 
+    public String getName() {
+        return name;
+    }
+
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
