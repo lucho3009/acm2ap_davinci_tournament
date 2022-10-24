@@ -46,11 +46,12 @@ public class Main {
                 profesoresPOO,
                 estudiantesFC
         );     // creamos partido
-        
+
 
         profesoresPOO.setPosition(1);
         estudiantesFC.setPosition(0);
 
+        System.out.println(primerParcial.generateMarker());
 
 
     }

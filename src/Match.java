@@ -8,6 +8,16 @@ public class Match {
     private int markerLocal;
     private int markerVisitant;
 
+    public String generateMarker() {
+        return String.format("%s (%d) - (%d) %s ",
+                this.getLocalTeam().getName(),
+                this.getMarkerLocal(),
+                this.getMarkerVisitant(),
+                 this.getVisitantTeam().getName()
+                
+        );
+    }
+
     Match() {
         this.setMarkerLocal(0);
         this.setMarkerVisitant(0);
@@ -69,4 +79,11 @@ public class Match {
         return "";
     }
 
+    public TeamSeason getLocalTeam() {
+        return localTeam;
+    }
+
+    public TeamSeason getVisitantTeam() {
+        return visitantTeam;
+    }
 }
