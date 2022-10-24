@@ -9,12 +9,6 @@ public class Main {
         Date fechaPosibleParcial = new Date(2022,8,29); //creamos fecha
 
 
-        Match primerParcial = new Match(
-                lugarDelParcial,
-        new Date (2022,8,29)
-    );     // creamos partido
-
-
         Player profeSergio = new Player("Sergio Medina",2,"Defender");
         Player profeSuplente = new Player("Juan manuel",3,"forwer");
         Player profeWeb = new Player ("SebasM",6,"midfildier");
@@ -46,15 +40,18 @@ public class Main {
         estudiantesFC.addPlayer(alumnoNacho);
         estudiantesFC.addPlayer(alumnoJose);
 
+        Match primerParcial = new Match(
+                lugarDelParcial,
+                new Date (2022,8,29),
+                profesoresPOO,
+                estudiantesFC
+        );     // creamos partido
         
 
         profesoresPOO.setPosition(1);
         estudiantesFC.setPosition(0);
 
 
-
-        primerParcial.setLocalTeam(profesoresPOO);
-        primerParcial.setVisitantTeam(estudiantesFC);
 
     }
 }
