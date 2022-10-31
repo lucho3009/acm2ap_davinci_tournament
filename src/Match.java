@@ -21,20 +21,22 @@ public class Match {
 
     private void makeGoal (TeamSeason team, Player player){
         if(team.getName() != this.localTeam.getName() && team.getName() != this.visitantTeam.getName()) return;
-
+        player.setGoalCounter(player.getGoalCounter() + 1);
 
     }
 
-    public void makeLocalGoal (Player player){
+    public void makeLocalGoal (int position){
         int marker = this.getMarkerLocal();
         marker++;
+        Player player = this.localTeam.getPlayers().get(position);
      this.makeGoal(this.localTeam, player);
      this.setMarkerLocal(marker);
     }
 
-    public void makeVisitantGoal (Player player){
+    public void makeVisitantGoal (int position){
         int marker = this.getMarkerVisitant();
         marker++;
+        Player player = this.visitantTeam.getPlayers().get(position);
         this.makeGoal(this.visitantTeam, player);
         this.setMarkerVisitant(marker);
     }
