@@ -1,6 +1,7 @@
 import java.util.Date;
 
 public class Match {
+    private Date creation;
     private Date date;
     private TeamSeason localTeam;
     private TeamSeason visitantTeam;
@@ -19,6 +20,7 @@ public class Match {
     }
 
     Match() {
+        this.creation = new Date();
         this.setMarkerLocal(0);
         this.setMarkerVisitant(0);
     }
@@ -85,5 +87,9 @@ public class Match {
 
     public TeamSeason getVisitantTeam() {
         return visitantTeam;
+    }
+
+    public Date getCreation() {
+        return creation;
     }
 }
